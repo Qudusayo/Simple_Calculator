@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="index.min.css">
+</head>
+<body>
+    <div class="calculator">
+
+        <input type="text"  class="view" id="scr" style="border:none;   border-top-right-radius:5px; border-top-left-radius:5px; font-size: 25px; width:260px; background-image: linear-gradient(to top, #ccff90, #8aee18dc); text-align: right; padding: 3px 2px 3px 2px;"></input>
+        <input type="text"  class="viewer" id="screen" placeholder="0" maxlength="11" style="border:none;   border-bottom-right-radius:5px; border-bottom-left-radius:5px; font-size: 40px; width:260px; background-image: linear-gradient(to bottom, #ccff90, #8aee18dc); text-align: right; padding: 3px 2px 3px 2px;"></input><br><br>
+
+        <div align='right' id="spe">
+        <button id="reset" class="cmm">AC</button>
+        <button onclick="addDivide()" class="com" id="divide">&#247;</button>
+        <button onclick="addTimes()" class="com" id="times">&#x00D7;</button>  
+        <button id="delete" class="com">&#8592;</button><br><br>
+        </div>
+
+        <button id="seven" class="cm" onclick="addScreen('7')">7</button>
+        <button onclick="addScreen('8')" class="cm" id="eight">8</button>
+        <button onclick="addScreen('9')" class="cm" id="nine">9</button>
+        <button onclick="addMinus()" class="com" id="minus">-</button><br><br>
+
+
+        <button onclick="addScreen('4')" class="cm" id="four">4</button>
+        <button onclick="addScreen('5')" class="cm" id="five">5</button>
+        <button onclick="addScreen('6')" class="cm" id="six">6</button>
+        <button onclick="addPlus()" class="com" id="plus">+</button><br><br>
+
+        <button onclick="addScreen('1')" class="cm" id="one">1</button>
+        <button onclick="addScreen('2')" class="cm" id="two">2</button>
+        <button onclick="addScreen('3')" class="cm" id="three">3</button>
+        <button onclick="addScreen('(')" class="brc" id="bracketo"><b>&#40;</b></button>
+        <button onclick="addScreen(')')" class="brc" id="bracketc"><b>&#41;</b></button>
+        <br><br>
+
+        <button onclick="addScreen('0')" class="cm" id="zero">0</button>
+        <button onclick="addDot()" class="cm" id="dot">.</button>
+        <button onclick="addNegate()" class="com" id="negate">&#x00B1;</button>
+        <button id="equ"><b>=</b></button>
+        <br><br>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
